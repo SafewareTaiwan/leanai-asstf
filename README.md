@@ -13,6 +13,7 @@
 
 ASSTF (Adaptive State-Space Transfer Function) is a PyTorch framework that lets neural layers continuously reconfigure their effective state space through a small set of **structural parameters**. It combines **parameter-efficient learning** with **inference-time adaptation**, making it ideal for edge devices, personalization, and continual learning.
 
+Project_LeanAI is a source-available research implementation of Adaptive State-Space Transfer Functions (ASSTF). It is licensed under the LeanAI ASSTF Community License for non-commercial research and educational use. For commercial use, SaaS deployment, or redistribution in products, please contact Safeware Technologies for a commercial license.
 ---
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb)
