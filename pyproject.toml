@@ -108,12 +108,17 @@ extend-exclude = '''
 [tool.ruff]
 line-length = 100
 target-version = "py39"
-select = ["E", "F", "I", "W"]
-ignore = ["E501"]
 extend-exclude = [".venv", ".pytest_cache", "__pycache__"]
 
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]
+
 [tool.mypy]
-python_version = "3.9"
+python_version = "3.10"
 warn_return_any = true
 warn_unused_configs = true
 exclude = [
@@ -123,11 +128,13 @@ exclude = [
     "app_*"
 ]
 
+[[tool.mypy.overrides]]
+module = "numpy.*"
+ignore_errors = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
 python_classes = "Test*"
 python_functions = "test_*"
 addopts = "-v --tb=short"
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["E402"]
