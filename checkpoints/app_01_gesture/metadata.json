@@ -1,0 +1,13 @@
+{
+  "app": "app_01_gesture",
+  "input_dim": 768,
+  "num_classes": 5,
+  "epochs": 2,
+  "asstf_epochs": 2,
+  "static_patience": 15,
+  "asstf_patience": 150,
+  "asstf_params": 4665,
+  "static_params": 38213,
+  "asstf_test_acc": 0.8,
+  "static_test_acc": 1.0
+}

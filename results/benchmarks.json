@@ -1,0 +1,173 @@
+[
+  {
+    "app": "app_01_gesture",
+    "status": "ok",
+    "elapsed_sec": 0.96,
+    "result": {
+      "app": "app_01_gesture",
+      "static_acc": 1.0,
+      "asstf_acc_before_adapt": 0.8,
+      "asstf_acc_after_adapt": 0.8,
+      "improvement": 0.0,
+      "adaptation_curve": [
+        {
+          "batch": 10,
+          "acc": 0.8
+        },
+        {
+          "batch": 20,
+          "acc": 0.8
+        },
+        {
+          "batch": 30,
+          "acc": 0.8
+        }
+      ]
+    }
+  },
+  {
+    "app": "app_02_wake_word",
+    "status": "ok",
+    "elapsed_sec": 6.93,
+    "result": {
+      "app": "app_02_wake_word",
+      "snr_table": [
+        {
+          "snr_db": -5,
+          "asstf_acc": 0.53375,
+          "static_acc": 0.84875,
+          "gap": -0.31500000000000006
+        },
+        {
+          "snr_db": 0,
+          "asstf_acc": 0.99875,
+          "static_acc": 1.0,
+          "gap": -0.0012499999999999734
+        },
+        {
+          "snr_db": 5,
+          "asstf_acc": 1.0,
+          "static_acc": 1.0,
+          "gap": 0.0
+        },
+        {
+          "snr_db": 10,
+          "asstf_acc": 1.0,
+          "static_acc": 1.0,
+          "gap": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "app": "app_03_anomaly",
+    "status": "ok",
+    "elapsed_sec": 2.78,
+    "result": {
+      "app": "app_03_anomaly",
+      "asstf_threshold": 0.7219157316684723,
+      "static_threshold": 0.5393454462289811,
+      "adapt_threshold": 1.0828735975027084,
+      "adapted_windows": 9,
+      "window_f1_asstf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.98989898989899
+      ],
+      "window_f1_static": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mean_f1_asstf": 0.09898989898989899,
+      "mean_f1_static": 0.1,
+      "global_f1_asstf": 0.9849246231155779,
+      "global_f1_static": 0.7633587786259542,
+      "window_recon_error_asstf": [
+        0.5056994557380676,
+        0.5024639368057251,
+        0.5136781334877014,
+        0.5052757859230042,
+        0.5024160146713257,
+        0.5102794170379639,
+        0.5048013925552368,
+        0.5388151407241821,
+        0.5388638973236084,
+        1.1196690797805786
+      ],
+      "window_recon_error_static": [
+        0.44401875138282776,
+        0.44240474700927734,
+        0.45197659730911255,
+        0.44489529728889465,
+        0.4443730115890503,
+        0.44214099645614624,
+        0.44075095653533936,
+        0.5089011192321777,
+        0.5099005699157715,
+        1.0914721488952637
+      ],
+      "mean_recon_error_asstf": 0.5741962254047394,
+      "mean_recon_error_static": 0.5220834195613862,
+      "final_asstf_threshold": 0.7219157316684723
+    }
+  },
+  {
+    "app": "app_04_few_shot",
+    "status": "ok",
+    "elapsed_sec": 1.21,
+    "result": {
+      "app": "app_04_few_shot",
+      "n_eval_tasks": 100,
+      "n_way": 5,
+      "k_shot": 1,
+      "asstf_mean_acc": 0.20266666666666666,
+      "static_mean_acc": 0.2072,
+      "asstf_std_acc": 0.06444291185917106,
+      "static_std_acc": 0.06140343819544816
+    }
+  },
+  {
+    "app": "app_05_rl",
+    "status": "ok",
+    "elapsed_sec": 0.24,
+    "result": {
+      "app": "app_05_rl",
+      "gravity_normal": 9.8,
+      "gravity_perturbed": 14.700000000000001,
+      "asstf_normal_reward": 45.036569294818115,
+      "static_normal_reward": 45.67890398400051,
+      "asstf_perturbed_reward": 34.51667597167443,
+      "static_perturbed_reward": 33.44486464929083,
+      "asstf_adapted_reward": 37.332960354212204
+    }
+  },
+  {
+    "app": "app_06_edge_nlp",
+    "status": "ok",
+    "elapsed_sec": 1.15,
+    "result": {
+      "app": "app_06_edge_nlp",
+      "data": "real_sst2_sentencepiece",
+      "asstf_params": 403896,
+      "static_params": 649218,
+      "asstf_test_acc": 0.48875,
+      "static_test_acc": 0.48125,
+      "param_reduction_pct": 37.787307191112994
+    }
+  }
+]

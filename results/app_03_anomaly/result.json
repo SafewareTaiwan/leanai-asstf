@@ -1,0 +1,34 @@
+{
+  "app": "app_03_anomaly",
+  "asstf_threshold": 0.7027005231380464,
+  "static_threshold": 0.618290822505951,
+  "adapt_threshold": 1.0540507847070697,
+  "adapted_windows": 2,
+  "window_f1_asstf": [
+    0.0,
+    0.0,
+    0.9949748743718593
+  ],
+  "window_f1_static": [
+    0.0,
+    0.0,
+    0.9295774647887324
+  ],
+  "mean_f1_asstf": 0.3316582914572864,
+  "mean_f1_static": 0.30985915492957744,
+  "global_f1_asstf": 0.9949748743718593,
+  "global_f1_static": 0.8839285714285714,
+  "window_recon_error_asstf": [
+    0.5160114765167236,
+    0.5123189091682434,
+    0.714530885219574
+  ],
+  "window_recon_error_static": [
+    0.49713876843452454,
+    0.49272409081459045,
+    0.7030982375144958
+  ],
+  "mean_recon_error_asstf": 0.5809537569681803,
+  "mean_recon_error_static": 0.5643203655878702,
+  "final_asstf_threshold": 0.7027005231380464
+}

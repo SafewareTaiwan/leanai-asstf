@@ -1,0 +1,21 @@
+{
+  "app": "app_01_gesture",
+  "static_acc": 1.0,
+  "asstf_acc_before_adapt": 0.8,
+  "asstf_acc_after_adapt": 0.8,
+  "improvement": 0.0,
+  "adaptation_curve": [
+    {
+      "batch": 10,
+      "acc": 0.8
+    },
+    {
+      "batch": 20,
+      "acc": 0.8
+    },
+    {
+      "batch": 30,
+      "acc": 0.8
+    }
+  ]
+}

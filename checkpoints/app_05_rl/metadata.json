@@ -1,0 +1,11 @@
+{
+  "app": "app_05_rl",
+  "n_episodes": 10,
+  "asstf_episodes": 10,
+  "static_patience": 50,
+  "asstf_patience": 500,
+  "asstf_params": 965,
+  "static_params": 1441,
+  "asstf_final_reward": 38.85248915503668,
+  "static_final_reward": 46.42830807181849
+}

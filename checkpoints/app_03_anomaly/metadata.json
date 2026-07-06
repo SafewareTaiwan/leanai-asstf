@@ -1,0 +1,11 @@
+{
+  "app": "app_03_anomaly",
+  "input_dim": 5,
+  "seq_len": 64,
+  "epochs": 2,
+  "asstf_epochs": 2,
+  "static_patience": 15,
+  "asstf_patience": 150,
+  "asstf_params": 506,
+  "static_params": 2080
+}

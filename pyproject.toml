@@ -1,0 +1,131 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leanai-asstf"
+version = "1.0.0"
+description = "ASSTF: Adaptive State-Space Transfer Function — parameter-efficient, inference-adaptable neural layers for edge AI and continual learning."
+readme = "README.md"
+license = {text = "LeanAI ASSTF Community License 1.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Bentley Yusen Lin", email = "Bentley@safeware.com.tw"}
+]
+keywords = [
+    "adaptive state-space transfer function",
+    "ASSTF",
+    "LeanAI",
+    "parameter-efficient deep learning",
+    "edge AI",
+    "TinyML",
+    "continual learning",
+    "test-time adaptation",
+    "online personalization",
+    "low-rank adaptation",
+    "PyTorch",
+    "efficient AI",
+    "green AI",
+    "on-device ML"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.3.0",
+    "matplotlib>=3.7.0",
+    "pandas>=2.0.0"
+]
+
+[project.optional-dependencies]
+nlp = [
+    "transformers>=4.30.0",
+    "datasets>=2.14.0",
+    "sentencepiece>=0.1.99",
+    "tiktoken>=0.5.0"
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0"
+]
+all = [
+    "transformers>=4.30.0",
+    "datasets>=2.14.0",
+    "sentencepiece>=0.1.99",
+    "tiktoken>=0.5.0",
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/safeware/Project_LeanAI"
+Documentation = "https://safeware.github.io/Project_LeanAI/"
+Repository = "https://github.com/safeware/Project_LeanAI"
+Issues = "https://github.com/safeware/Project_LeanAI/issues"
+Changelog = "https://github.com/safeware/Project_LeanAI/blob/main/CHANGELOG.md"
+Commercial = "https://github.com/safeware/Project_LeanAI/blob/main/docs/COMMERCIAL_LICENSE.md"
+
+[project.scripts]
+leanai-run-all = "run_all:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["asstf*", "shared*"]
+exclude = ["tests*", "app_*", "checkpoints*", "results*", "data*", "notebooks*", "docs*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312", "py313"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  .venv
+  | .pytest_cache
+  | __pycache__
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+extend-exclude = [".venv", ".pytest_cache", "__pycache__"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+exclude = [
+    ".venv",
+    ".pytest_cache",
+    "__pycache__",
+    "app_*"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"

@@ -1,0 +1,12 @@
+{
+  "app": "app_04_few_shot",
+  "n_way": 5,
+  "k_shot": 1,
+  "q_query": 15,
+  "n_tasks": 20,
+  "asstf_tasks": 20,
+  "static_patience": 200,
+  "asstf_patience": 2000,
+  "asstf_params": 2105,
+  "static_params": 7237
+}

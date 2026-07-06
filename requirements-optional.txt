@@ -1,0 +1,8 @@
+# Optional dependencies for App 06 Edge NLP real SST-2 data support.
+# Install with: pip install -r requirements-optional.txt
+# Or use: pip install leanai-asstf[nlp]
+
+transformers>=4.30.0
+datasets>=2.14.0
+sentencepiece>=0.1.99
+tiktoken>=0.5.0

@@ -1,0 +1,19 @@
+# Global owners
+* @safeware/leanai-core
+
+# Core algorithm and framework
+/asstf/ @safeware/leanai-core
+/shared/ @safeware/leanai-core
+/tests/ @safeware/leanai-core
+
+# Documentation and community
+/docs/ @safeware/leanai-docs
+*.md @safeware/leanai-docs
+
+# Applications
+/app_01_gesture/ @safeware/leanai-apps
+/app_02_wake_word/ @safeware/leanai-apps
+/app_03_anomaly/ @safeware/leanai-apps
+/app_04_few_shot/ @safeware/leanai-apps
+/app_05_rl/ @safeware/leanai-apps
+/app_06_edge_nlp/ @safeware/leanai-apps

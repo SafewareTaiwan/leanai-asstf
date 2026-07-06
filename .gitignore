@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# PyTorch checkpoints (large binary files)
+checkpoints/**/*.pt
+checkpoints/**/*.pth
+
+# Data / results: keep the folder structure and JSON reports, ignore raw caches
+data/*
+!data/.gitkeep
+results/*
+!results/benchmarks.json
+!results/app_*/
+results/app_*/*
+!results/app_*/result.json
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+{
+  "app": "app_06_edge_nlp",
+  "data": "real_sst2_sentencepiece",
+  "vocab_size": 3000,
+  "epochs": 1,
+  "asstf_epochs": 500,
+  "static_patience": 1000,
+  "asstf_patience": 1000,
+  "asstf_params": 403896,
+  "static_params": 649218,
+  "asstf_val_acc": 0.55,
+  "static_val_acc": 0.51
+}
