@@ -118,7 +118,6 @@ ignore = ["E501"]
 "tests/*" = ["E402"]
 
 [tool.mypy]
-python_version = "3.10"
 warn_return_any = true
 warn_unused_configs = true
 exclude = [
