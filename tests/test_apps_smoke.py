@@ -44,7 +44,7 @@ def test_app_smoke(name, train_fn, eval_fn, train_kwargs, eval_kwargs):
         if "data" in str(e) or ".npz" in str(e):
             pytest.skip(f"Skipping test due to missing local dataset: {e}")
         else:
-            raise 
+            raise
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
