@@ -46,5 +46,6 @@ def test_app_smoke(name, train_fn, eval_fn, train_kwargs, eval_kwargs):
         else:
             raise
 
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
