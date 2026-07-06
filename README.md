@@ -9,7 +9,7 @@ Project_LeanAI is a source-available research implementation of Adaptive State-S
 ---
 
 <div align="center">
-  <img src="assets/logo.png" alt="ASSTF Logo" width="120">
+  <img src="https://raw.githubusercontent.com/SafewareTaiwan/leanai-asstf/main/assets/logo.png" alt="ASSTF Logo" width="120">
   <h1>LeanAI ASSTF</h1>
   <p><strong>Adaptive State-Space Transfer Function</strong></p>
 </div>
