@@ -204,12 +204,8 @@ class ASSTFLinear(nn.Module, _LowRankProjectionMixin):
         self.bias = nn.Parameter(torch.empty(out_features))
 
         # Structural parameters θs
-        self.structural_u = nn.Parameter(
-            torch.empty(out_features, structural_rank)
-        )
-        self.structural_v = nn.Parameter(
-            torch.empty(structural_rank, in_features)
-        )
+        self.structural_u = nn.Parameter(torch.empty(out_features, structural_rank))
+        self.structural_v = nn.Parameter(torch.empty(structural_rank, in_features))
         # Initialize gate to a strongly negative value so sigmoid(gate) ≈ 0.
         # This makes the structural branch inactive at start, so the layer
         # initially behaves exactly like a standard Linear layer.
@@ -416,12 +412,8 @@ class ASSTFConv1d(nn.Module, _LowRankProjectionMixin):
         )
 
         # Structural low-rank factors θs
-        self.structural_u = nn.Parameter(
-            torch.empty(out_channels, structural_rank)
-        )
-        self.structural_v = nn.Parameter(
-            torch.empty(structural_rank, in_channels * kernel_size)
-        )
+        self.structural_u = nn.Parameter(torch.empty(out_channels, structural_rank))
+        self.structural_v = nn.Parameter(torch.empty(structural_rank, in_channels * kernel_size))
         # Strongly negative gate so the structural branch is off at start.
         self.structural_gate = nn.Parameter(torch.tensor(-6.0))
 
@@ -524,6 +516,4 @@ class ASSTFConvBlock(nn.Module):
 
 def count_parameters(model: nn.Module, trainable_only: bool = True) -> int:
     """Return the number of (trainable) parameters in a model."""
-    return sum(
-        p.numel() for p in model.parameters() if (p.requires_grad or not trainable_only)
-    )
+    return sum(p.numel() for p in model.parameters() if (p.requires_grad or not trainable_only))

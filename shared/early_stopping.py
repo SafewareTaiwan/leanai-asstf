@@ -5,7 +5,6 @@ Simple early-stopping helper for training until a validation metric plateaus.
 from __future__ import annotations
 
 import math
-from typing import Callable
 
 
 class EarlyStopping:

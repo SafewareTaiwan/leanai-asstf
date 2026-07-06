@@ -108,7 +108,7 @@ class SurpriseMinimizer:
         """
         kl = torch.tensor(0.0, device=self.device)
         for p in self.struct_params:
-            kl = kl + (p ** 2).sum() / (2.0 * self.prior_std ** 2)
+            kl = kl + (p**2).sum() / (2.0 * self.prior_std**2)
         return kl
 
     def adapt(
@@ -166,9 +166,7 @@ class SurpriseMinimizer:
                 # Self-supervised reconstruction: reproduce the input.
                 loss = self.recon_loss(out, x)
             else:
-                raise ValueError(
-                    "Cross-entropy adaptation requires an explicit target tensor"
-                )
+                raise ValueError("Cross-entropy adaptation requires an explicit target tensor")
 
             surprise = loss + self.beta * self._kl_prior()
             surprise.backward()

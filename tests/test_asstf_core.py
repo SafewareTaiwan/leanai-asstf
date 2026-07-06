@@ -14,7 +14,14 @@ import torch.nn as nn
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from asstf import ASSTFLinear, ASSTFBlock, ASSTFConv1d, BilevelTrainer, SurpriseMinimizer, count_parameters
+from asstf import (
+    ASSTFBlock,
+    ASSTFConv1d,
+    ASSTFLinear,
+    BilevelTrainer,
+    SurpriseMinimizer,
+    count_parameters,
+)
 
 
 def test_asstf_linear_output_shape():

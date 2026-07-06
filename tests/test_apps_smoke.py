@@ -13,19 +13,18 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from app_01_gesture.train import train as train_gesture
 from app_01_gesture.evaluate import evaluate as eval_gesture
-from app_02_wake_word.train import train as train_wake
+from app_01_gesture.train import train as train_gesture
 from app_02_wake_word.evaluate import evaluate as eval_wake
-from app_03_anomaly.train import train as train_anomaly
+from app_02_wake_word.train import train as train_wake
 from app_03_anomaly.evaluate import evaluate as eval_anomaly
-from app_04_few_shot.train import train as train_few_shot
+from app_03_anomaly.train import train as train_anomaly
 from app_04_few_shot.evaluate import evaluate as eval_few_shot
-from app_05_rl.train import train as train_rl
+from app_04_few_shot.train import train as train_few_shot
 from app_05_rl.evaluate import evaluate as eval_rl
-from app_06_edge_nlp.train import train as train_nlp
+from app_05_rl.train import train as train_rl
 from app_06_edge_nlp.evaluate import evaluate as eval_nlp
-
+from app_06_edge_nlp.train import train as train_nlp
 
 APPS = [
     ("gesture", train_gesture, eval_gesture, {"epochs": 2}, {}),
