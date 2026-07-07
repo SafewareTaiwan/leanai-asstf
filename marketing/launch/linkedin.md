@@ -19,8 +19,8 @@ This is the beginning of a longer journey. Stage 2 will bring public benchmarks 
 
 If you are building AI for edge devices, personalized experiences, or sustainable computing, we invite you to try ASSTF and share your feedback.
 
-🔗 GitHub: https://github.com/safeware/Project_LeanAI
-📓 Colab: https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb
+🔗 GitHub: https://github.com/SafewareTaiwan/leanai-asstf
+📓 Colab: https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb
 📧 Commercial inquiries: Bentley@safeware.com.tw
 
 #EdgeAI #TinyML #EfficientAI #PyTorch #OpenSource #MachineLearning #ASSTF #LeanAI

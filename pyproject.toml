@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "leanai-asstf"
-version = "1.0.0"
+version = "1.0.1"
 description = "ASSTF: Adaptive State-Space Transfer Function — parameter-efficient, inference-adaptable neural layers for edge AI and continual learning."
 readme = "README.md"
 license = {text = "LeanAI ASSTF Community License 1.0"}
@@ -13,6 +13,34 @@ authors = [
     {name = "Bentley Yusen Lin", email = "Bentley@safeware.com.tw"}
 ]
 keywords = [
+    # Core keywords
+    "asstf",
+    "adaptive-neural-networks",
+    "dynamic-topology",
+    "neural-architecture",
+    "parameter-efficient",
+    "test-time-adaptation",
+    "continual-learning",
+    "model-compression",
+    "edge-ai",
+    "low-rank-adaptation",
+    "bilevel-optimization",
+    "self-sculpting",
+    # Extended keywords
+    "deep-learning",
+    "machine-learning",
+    "pytorch",
+    "neural-networks",
+    "ai",
+    "artificial-intelligence",
+    "llm",
+    "large-language-models",
+    "efficient-ai",
+    "on-device-ai",
+    "personalization",
+    "concept-drift",
+    "anomaly-detection",
+    # Legacy keywords
     "adaptive state-space transfer function",
     "ASSTF",
     "LeanAI",
@@ -78,12 +106,12 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/safeware/Project_LeanAI"
-Documentation = "https://safeware.github.io/Project_LeanAI/"
-Repository = "https://github.com/safeware/Project_LeanAI"
-Issues = "https://github.com/safeware/Project_LeanAI/issues"
-Changelog = "https://github.com/safeware/Project_LeanAI/blob/main/CHANGELOG.md"
-Commercial = "https://github.com/safeware/Project_LeanAI/blob/main/docs/COMMERCIAL_LICENSE.md"
+Homepage = "https://github.com/SafewareTaiwan/leanai-asstf"
+Documentation = "https://safewaretaiwan.github.io/leanai-asstf/"
+Repository = "https://github.com/SafewareTaiwan/leanai-asstf"
+Issues = "https://github.com/SafewareTaiwan/leanai-asstf/issues"
+Changelog = "https://github.com/SafewareTaiwan/leanai-asstf/blob/main/CHANGELOG.md"
+Commercial = "https://github.com/SafewareTaiwan/leanai-asstf/blob/main/docs/COMMERCIAL_LICENSE.md"
 
 [project.scripts]
 leanai-run-all = "run_all:main"
@@ -108,33 +136,20 @@ extend-exclude = '''
 [tool.ruff]
 line-length = 100
 target-version = "py39"
-extend-exclude = [".venv", ".pytest_cache", "__pycache__"]
-
-[tool.ruff.lint]
 select = ["E", "F", "I", "W"]
 ignore = ["E501"]
-
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["E402"]
+extend-exclude = [".venv", ".pytest_cache", "__pycache__"]
 
 [tool.mypy]
+python_version = "3.9"
+warn_return_any = true
 warn_unused_configs = true
-disable_error_code = [
-    "arg-type",
-    "assignment",
-    "attr-defined",
-    "no-any-return"
-]
 exclude = [
     ".venv",
     ".pytest_cache",
     "__pycache__",
     "app_*"
 ]
-
-[[tool.mypy.overrides]]
-module = "numpy.*"
-ignore_errors = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

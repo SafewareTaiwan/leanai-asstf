@@ -12,7 +12,7 @@ ASSTF is a PyTorch framework for parameter-efficient, inference-adaptable neural
 - **[Architecture](ARCHITECTURE_EN.md)** — How ASSTF works under the hood
 - **[Usage Guide](USAGE_EN.md)** — Install and start coding
 - **[API Reference](API_EN.md)** — Complete class and function reference
-- **[Run it in Colab](https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb)** — No installation required
+- **[Run it in Colab](https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb)** — No installation required
 
 ---
 
@@ -34,8 +34,8 @@ ASSTF is a PyTorch framework for parameter-efficient, inference-adaptable neural
 
 ## Community
 
-- [GitHub Repository](https://github.com/safeware/Project_LeanAI)
-- [Issues](https://github.com/safeware/Project_LeanAI/issues)
+- [GitHub Repository](https://github.com/SafewareTaiwan/leanai-asstf)
+- [Issues](https://github.com/SafewareTaiwan/leanai-asstf/issues)
 - [Contributing Guide](../CONTRIBUTING.md)
 - [Code of Conduct](../CODE_OF_CONDUCT.md)
 - [Security Policy](../SECURITY.md)

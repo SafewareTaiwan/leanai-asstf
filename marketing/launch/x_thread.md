@@ -56,9 +56,9 @@ pip install leanai-asstf
 ```
 
 Or run the Colab:
-https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb
+https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb
 
-Repo: https://github.com/safeware/Project_LeanAI
+Repo: https://github.com/SafewareTaiwan/leanai-asstf
 
 **Tweet 7 (license + stage):**
 License: free for research/personal, paid for commercial use.

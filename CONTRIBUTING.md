@@ -10,7 +10,7 @@ This project is dual-licensed under the [LeanAI ASSTF Community License](LICENSE
 
 ### Reporting Bugs
 
-1. Check if the issue already exists in [GitHub Issues](https://github.com/safeware/Project_LeanAI/issues).
+1. Check if the issue already exists in [GitHub Issues](https://github.com/SafewareTaiwan/leanai-asstf/issues).
 2. If not, open a new issue using the **Bug Report** template.
 3. Include:
    - A clear description of the bug
@@ -58,8 +58,8 @@ We especially welcome benchmarks on public datasets! To contribute:
 ## Development Setup
 
 ```bash
-git clone https://github.com/safeware/Project_LeanAI.git
-cd Project_LeanAI
+git clone https://github.com/SafewareTaiwan/leanai-asstf.git
+cd leanai-asstf
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

@@ -9,8 +9,8 @@ This guide shows how to install ASSTF, replace standard PyTorch layers, train mo
 ### From source
 
 ```bash
-git clone https://github.com/YOUR_ORG/Project_LeanAI.git
-cd Project_LeanAI
+git clone https://github.com/SafewareTaiwan/leanai-asstf.git
+cd leanai-asstf
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

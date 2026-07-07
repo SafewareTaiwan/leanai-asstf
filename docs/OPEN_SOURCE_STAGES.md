@@ -51,9 +51,9 @@ Each stage expands the flywheel. The open-source core is the **top of the funnel
 | 6 reproducible demos with open data-generation scripts | ✅ Ready | Engineering |
 | English-first README + docs (Intro, Architecture, Usage, API) | ✅ Ready | Docs |
 | Clear dual-license (`LICENSE` + `LICENSE-COMMERCIAL.md`) | ✅ Ready | Legal |
-| `pyproject.toml` + PyPI package | 🔄 Next 2 weeks | Engineering |
-| GitHub Actions CI (pytest + lint) | 🔄 Next 2 weeks | Engineering |
-| GitHub community files (`CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CHANGELOG.md`) | 🔄 Next 2 weeks | Community |
+| `pyproject.toml` + PyPI package | ✅ Ready (`leanai-asstf` v1.0.1) | Engineering |
+| GitHub Actions CI (pytest + lint) | ✅ Ready (`.github/workflows/ci.yml`) | Engineering |
+| GitHub community files (`CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CHANGELOG.md`) | ✅ Ready | Community |
 | Launch announcement (blog + HN + Reddit + X/LinkedIn) | ⏳ Pending | Marketing |
 
 ### Positioning for Stage 1
@@ -180,9 +180,9 @@ Each stage expands the flywheel. The open-source core is the **top of the funnel
 
 **Yes — with the following conditions:**
 
-1. Fix the remaining absolute paths in `README.md` and `docs/BENCHMARKS.md`.
-2. Add `pyproject.toml` and publish to PyPI within 2 weeks.
-3. Add GitHub Actions CI.
+1. ✅ Fix remaining placeholder URLs (`YOUR_ORG/Project_LeanAI`) across README and docs.
+2. ✅ Add `pyproject.toml` and publish to PyPI (`leanai-asstf` v1.0.1).
+3. ✅ Add GitHub Actions CI (`.github/workflows/ci.yml`).
 4. Clarify in README that App 01–05 are reproducible synthetic proof-of-concepts.
 5. Add a `ROADMAP.md` or link to this document so visitors see the bigger plan.
 
@@ -202,9 +202,9 @@ The current codebase is **not sufficient to ignite the world on its own**, but i
 
 1. Replace root `README.md` with the updated English version that includes Stage 1/2/3 framing.
 2. Create `docs/OPEN_SOURCE_STAGES.md` (this file) and link it from README.
-3. Remove absolute paths from `README.md` and `docs/BENCHMARKS.md`.
-4. Add `pyproject.toml` and publish `leanai-asstf` to PyPI.
-5. Create `.github/workflows/ci.yml`.
+3. ✅ Replace placeholder GitHub URLs (`YOUR_ORG/Project_LeanAI`) with the live repo `https://github.com/SafewareTaiwan/leanai-asstf`.
+4. ✅ Add `pyproject.toml` and publish `leanai-asstf` to PyPI.
+5. ✅ Create `.github/workflows/ci.yml`.
 6. Draft launch announcement and pick a launch date.
 
 ---

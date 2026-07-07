@@ -3,7 +3,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License: Community/Commercial](https://img.shields.io/badge/license-Community%2FCommercial-orange.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
+[![Tests](https://github.com/SafewareTaiwan/leanai-asstf/actions/workflows/ci.yml/badge.svg)](https://github.com/SafewareTaiwan/leanai-asstf/actions)
 
 > **Tiny, self-adapting neural layers for efficient edge AI and continual learning.**
 
@@ -52,8 +52,8 @@ out = layer(x)  # shape: (16, 64)
 Train and evaluate all six demos:
 
 ```bash
-git clone https://github.com/YOUR_ORG/Project_LeanAI.git
-cd Project_LeanAI
+git clone https://github.com/SafewareTaiwan/leanai-asstf.git
+cd leanai-asstf
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pytest tests/ -v
@@ -73,8 +73,8 @@ pip install leanai-asstf
 ### From source
 
 ```bash
-git clone https://github.com/YOUR_ORG/Project_LeanAI.git
-cd Project_LeanAI
+git clone https://github.com/SafewareTaiwan/leanai-asstf.git
+cd leanai-asstf
 pip install -r requirements.txt
 ```
 
@@ -171,7 +171,7 @@ python run_all.py
 ## Project Structure
 
 ```
-Project_LeanAI/
+leanai-asstf/
 ├── asstf/                  # Core ASSTF framework
 ├── shared/                 # Baselines, metrics, early stopping
 ├── app_01_gesture/         # Gesture recognition demo

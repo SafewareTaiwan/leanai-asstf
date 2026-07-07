@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 
 
 class StaticMLP(nn.Module):
@@ -28,7 +29,9 @@ class StaticMLP(nn.Module):
         self.input_dim = input_dim
         self.output_dim = output_dim
 
-        act = {"relu": nn.ReLU, "tanh": nn.Tanh, "sigmoid": nn.Sigmoid}.get(activation, nn.ReLU)
+        act = {"relu": nn.ReLU, "tanh": nn.Tanh, "sigmoid": nn.Sigmoid}.get(
+            activation, nn.ReLU
+        )
 
         layers = []
         prev = input_dim

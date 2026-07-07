@@ -3,7 +3,7 @@
   "data": "real_sst2_sentencepiece",
   "asstf_params": 403896,
   "static_params": 649218,
-  "asstf_test_acc": 0.59,
-  "static_test_acc": 0.485,
+  "asstf_test_acc": 0.5925,
+  "static_test_acc": 0.47625,
   "param_reduction_pct": 37.787307191112994
 }

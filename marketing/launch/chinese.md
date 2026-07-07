@@ -38,11 +38,11 @@ pip install leanai-asstf
 ```
 
 或直接在 Colab 執行：
-https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb
+https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb
 
 我們把這次定位為 **Stage 1：建立可復現的基礎與原創者信用**。Stage 2 將補上真實公開數據集、Hugging Face 整合與學術論文；Stage 3 則會推出企業級工具與邊緣部署 SDK。
 
 歡迎大家試用、提 issue、貢獻真實數據集 benchmark，一起證明 AI 的未來不只是變大，而是變得更聰明、更適應。
 
-GitHub：https://github.com/safeware/Project_LeanAI
+GitHub：https://github.com/SafewareTaiwan/leanai-asstf
 商業授權洽詢：Bentley@safeware.com.tw

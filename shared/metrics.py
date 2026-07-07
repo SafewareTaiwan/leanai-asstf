@@ -22,7 +22,11 @@ def accuracy(logits: torch.Tensor, labels: torch.Tensor) -> float:
 
     # Convert one-hot / soft labels to class indices only when the shapes
     # fully match and the last dimension is a class dimension.
-    if labels.dim() == logits.dim() and labels.shape == logits.shape and labels.size(-1) > 1:
+    if (
+        labels.dim() == logits.dim()
+        and labels.shape == logits.shape
+        and labels.size(-1) > 1
+    ):
         labels = torch.argmax(labels, dim=-1)
     elif labels.dim() > 1:
         labels = labels.squeeze(-1)

@@ -8,6 +8,6 @@
   "asstf_patience": 100,
   "asstf_params": 779,
   "static_params": 1202,
-  "asstf_test_acc": 0.975,
-  "static_test_acc": 0.975
+  "asstf_test_acc": 1.0,
+  "static_test_acc": 0.9625
 }

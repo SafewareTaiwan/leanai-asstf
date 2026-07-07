@@ -2,9 +2,9 @@
   "app": "app_05_rl",
   "gravity_normal": 9.8,
   "gravity_perturbed": 14.700000000000001,
-  "asstf_normal_reward": 47.41429285431329,
-  "static_normal_reward": 46.117867438524684,
-  "asstf_perturbed_reward": 30.40599146649909,
-  "static_perturbed_reward": 29.35529018015533,
-  "asstf_adapted_reward": 39.452998807835584
+  "asstf_normal_reward": 33.36220143762186,
+  "static_normal_reward": 44.38817222030467,
+  "asstf_perturbed_reward": 45.69230888355155,
+  "static_perturbed_reward": 28.939313609637992,
+  "asstf_adapted_reward": 40.84624923107711
 }

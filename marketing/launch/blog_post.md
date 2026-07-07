@@ -56,7 +56,7 @@ pip install leanai-asstf
 
 Or run it in Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb)
 
 ## What's next?
 
@@ -65,6 +65,6 @@ Or run it in Colab:
 
 We invite researchers, developers, and builders to try ASSTF, report issues, and help us prove that the future of AI is not just bigger — it's adaptive.
 
-**GitHub:** https://github.com/safeware/Project_LeanAI  
-**Documentation:** https://safeware.github.io/Project_LeanAI/  
+**GitHub:** https://github.com/SafewareTaiwan/leanai-asstf  
+**Documentation:** https://safewaretaiwan.github.io/leanai-asstf/  
 **Commercial inquiries:** Bentley@safeware.com.tw

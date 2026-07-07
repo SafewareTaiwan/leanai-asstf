@@ -2,7 +2,7 @@
 
 **Title:** Show HN: ASSTF – Parameter-efficient, inference-adaptive PyTorch layers for edge AI
 
-**Link:** https://github.com/safeware/Project_LeanAI
+**Link:** https://github.com/SafewareTaiwan/leanai-asstf
 
 **Body:**
 
@@ -25,4 +25,4 @@ License: free for research/personal, paid for commercial use.
 
 Would love feedback from the HN crowd on the API, the math, or where you’d most want to see real benchmarks.
 
-GitHub: https://github.com/safeware/Project_LeanAI
+GitHub: https://github.com/SafewareTaiwan/leanai-asstf

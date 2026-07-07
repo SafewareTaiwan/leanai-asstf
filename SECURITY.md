@@ -41,4 +41,4 @@ Send an email to **Bentley@safeware.com.tw** with the following information:
 
 ---
 
-For general questions and bug reports, please use [GitHub Issues](https://github.com/safeware/Project_LeanAI/issues).
+For general questions and bug reports, please use [GitHub Issues](https://github.com/SafewareTaiwan/leanai-asstf/issues).

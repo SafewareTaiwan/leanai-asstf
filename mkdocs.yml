@@ -1,7 +1,7 @@
 site_name: ASSTF Documentation
-site_url: https://safeware.github.io/Project_LeanAI/
-repo_url: https://github.com/safeware/Project_LeanAI
-repo_name: safeware/Project_LeanAI
+site_url: https://safewaretaiwan.github.io/leanai-asstf/
+repo_url: https://github.com/SafewareTaiwan/leanai-asstf
+repo_name: SafewareTaiwan/leanai-asstf
 edit_uri: edit/main/docs/
 
 theme:
@@ -59,7 +59,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/safeware/Project_LeanAI
+      link: https://github.com/SafewareTaiwan/leanai-asstf
   version:
     provider: mike
 

@@ -15,7 +15,7 @@
 ## 執行
 
 ```bash
-cd Project_LeanAI_OpenSource
+cd leanai-asstf_OpenSource
 python app_01_gesture/train.py
 python app_01_gesture/evaluate.py
 ```

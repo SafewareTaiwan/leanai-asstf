@@ -3,8 +3,8 @@
   "n_eval_tasks": 5,
   "n_way": 5,
   "k_shot": 1,
-  "asstf_mean_acc": 0.2,
-  "static_mean_acc": 0.21600000000000003,
-  "asstf_std_acc": 0.0,
-  "static_std_acc": 0.04079215610874228
+  "asstf_mean_acc": 0.19999999999999998,
+  "static_mean_acc": 0.2,
+  "asstf_std_acc": 0.008432740427115679,
+  "static_std_acc": 0.0
 }

@@ -1,37 +1,21 @@
-# Project_LeanAI - ASSTF Stage 1
-
-ASSTF (Adaptive State-Space Transfer Function): A PyTorch framework for dynamic neural topology that reduces parameters by 5-10x, enables test-time adaptation, and outperforms static models on structure-sensitive tasks.
-
-Project_LeanAI is a source-available research implementation of Adaptive State-Space Transfer Functions (ASSTF) for non-commercial research and educational use.
-
-&nbsp;
-
----
-
 <div align="center">
-  <img src="assets/logo.png?raw=true" alt="ASSTF Logo" width="120">
+  <img src="assets/logo.svg" alt="ASSTF Logo" width="120">
   <h1>LeanAI ASSTF</h1>
   <p><strong>Adaptive State-Space Transfer Function</strong></p>
 </div>
 
----
-
-&nbsp;
-
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License: Community/Commercial](https://img.shields.io/badge/license-Community%2FCommercial-orange.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
+[![Tests](https://github.com/SafewareTaiwan/leanai-asstf/actions/workflows/ci.yml/badge.svg)](https://github.com/SafewareTaiwan/leanai-asstf/actions)
 
 > **Tiny, self-adapting neural layers for efficient edge AI and continual learning.**
 
 ASSTF (Adaptive State-Space Transfer Function) is a PyTorch framework that lets neural layers continuously reconfigure their effective state space through a small set of **structural parameters**. It combines **parameter-efficient learning** with **inference-time adaptation**, making it ideal for edge devices, personalization, and continual learning.
 
-Project_LeanAI is a source-available research implementation of Adaptive State-Space Transfer Functions (ASSTF). It is licensed under the LeanAI ASSTF Community License for non-commercial research and educational use. For commercial use, SaaS deployment, or redistribution in products, please contact Safeware Technologies for a commercial license.
-
 ---
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb)
 
 ## 🚀 Current Status: Stage 1 — Grounding Credit
 
@@ -74,8 +58,8 @@ out = layer(x)  # shape: (16, 64)
 Train and evaluate all six demos:
 
 ```bash
-git clone https://github.com/YOUR_ORG/Project_LeanAI.git
-cd Project_LeanAI
+git clone https://github.com/SafewareTaiwan/leanai-asstf.git
+cd leanai-asstf
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pytest tests/ -v
@@ -95,8 +79,8 @@ pip install leanai-asstf
 ### From source
 
 ```bash
-git clone https://github.com/YOUR_ORG/Project_LeanAI.git
-cd Project_LeanAI
+git clone https://github.com/SafewareTaiwan/leanai-asstf.git
+cd leanai-asstf
 pip install -r requirements.txt
 ```
 
@@ -201,7 +185,7 @@ python run_all.py
 ## Project Structure
 
 ```
-Project_LeanAI/
+leanai-asstf/
 ├── asstf/                  # Core ASSTF framework
 ├── shared/                 # Baselines, metrics, early stopping
 ├── app_01_gesture/         # Gesture recognition demo

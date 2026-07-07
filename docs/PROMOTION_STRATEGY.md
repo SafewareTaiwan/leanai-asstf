@@ -71,7 +71,7 @@ The README is the single most important factor for star conversion. Suggested se
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](...)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](...)
 [![License: Community/Commercial](https://img.shields.io/badge/license-Community%2FCommercial-orange.svg)](LICENSE)
-[![Tests](https://github.com/YOUR_ORG/Project_LeanAI/actions/workflows/ci.yml/badge.svg)](...)
+[![Tests](https://github.com/SafewareTaiwan/leanai-asstf/actions/workflows/ci.yml/badge.svg)](https://github.com/SafewareTaiwan/leanai-asstf/actions)
 [![PyPI](https://img.shields.io/pypi/v/leanai-asstf)](...)
 ```
 

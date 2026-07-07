@@ -25,5 +25,5 @@ We’re treating this as Stage 1: reproducible reference + proof-of-concepts. St
 
 Happy to answer questions and take suggestions on which real datasets or baselines would be most convincing.
 
-GitHub: https://github.com/safeware/Project_LeanAI
-Colab: https://colab.research.google.com/github/safeware/Project_LeanAI/blob/main/notebooks/ASSTF_Quickstart.ipynb
+GitHub: https://github.com/SafewareTaiwan/leanai-asstf
+Colab: https://colab.research.google.com/github/SafewareTaiwan/leanai-asstf/blob/main/notebooks/ASSTF_Quickstart.ipynb

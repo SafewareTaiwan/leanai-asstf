@@ -14,9 +14,9 @@ trainer     : Bilevel optimisation trainer (Algorithm 1 in the paper).
 adaptation  : Inference-time structural adaptation via surprise minimisation.
 """
 
-from .adaptation import SurpriseMinimizer
-from .core import ASSTFBlock, ASSTFConv1d, ASSTFConvBlock, ASSTFLinear, count_parameters
+from .core import ASSTFLinear, ASSTFBlock, ASSTFConv1d, ASSTFConvBlock, count_parameters
 from .trainer import BilevelTrainer
+from .adaptation import SurpriseMinimizer
 
 __all__ = [
     "ASSTFLinear",

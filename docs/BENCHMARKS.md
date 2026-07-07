@@ -3,7 +3,7 @@
 本文件记录六个示例应用中 ASSTF 模型与静态基线的对比结果。所有模型均训练至验证指标进入平台期（early stopping），以确保业界可接受的收敛性。
 
 > **测试环境**：macOS，Python 3.13，PyTorch 2.12，CPU/MPS 执行。  
-> **项目路径**：`Project_LeanAI/`（本仓库根目录）  
+> **项目路径**：`leanai-asstf/`（本仓库根目录）  
 > **训练策略**：每个应用对静态基线与 ASSTF 分别设置早停，其中 **ASSTF 的 patience 是静态基线的 10 倍**。原因是静态模型进入 plateau 后通常不再下降，而 ASSTF 的双阶段优化可能在一段时间后突破 plateau 继续提升。  
 > **ASSTF + CNN**：App 02 唤醒词检测已改用 `ASSTFConv1d`（参考 `ASSTF-YOLO` 的 1×1 结构残差设计），验证 ASSTF 与卷积网络的结合方式。  
 > **数据说明**：App 01–05 使用可复现的合成数据，便于快速验证算法行为；App 06 使用真实 SST-2 数据集 + 自定义 3000 词表 SentencePiece tokenizer，验证 ASSTF 在真实文本任务上的参数效率。  
@@ -122,7 +122,7 @@
 ## 五、复现方式
 
 ```bash
-cd Project_LeanAI
+cd leanai-asstf
 source .venv/bin/activate
 python run_all.py
 ```
