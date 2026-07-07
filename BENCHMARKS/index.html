@@ -1,0 +1,1456 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://safewaretaiwan.github.io/leanai-asstf/BENCHMARKS/">
+      
+      
+        <link rel="prev" href="../API_EN/">
+      
+      
+        <link rel="next" href="../OPEN_SOURCE_STAGES/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Benchmarks - ASSTF Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#asstf-51" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ASSTF Documentation" class="md-header__button md-logo" aria-label="ASSTF Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ASSTF Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Benchmarks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SafewareTaiwan/leanai-asstf" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SafewareTaiwan/leanai-asstf
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../INTRODUCTION_EN/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introduction
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ARCHITECTURE_EN/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../USAGE_EN/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Usage
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../API_EN/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Benchmarks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../OPEN_SOURCE_STAGES/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Open Source Stages
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../BUSINESS_ROADMAP/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Business Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../PROMOTION_STRATEGY/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Promotion Strategy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../DESIGN_IMPLEMENTATION_REVIEW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design Review
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../STAGE1_IMPACT_ASSESSMENT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Stage 1 Impact
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../GITHUB_PLACEMENT/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GitHub Placement
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../STAGE1_EXECUTION_PLAN/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Execution Plan
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ASSTF Documentation" class="md-nav__button md-logo" aria-label="ASSTF Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    ASSTF Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SafewareTaiwan/leanai-asstf" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SafewareTaiwan/leanai-asstf
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../INTRODUCTION_EN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ARCHITECTURE_EN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USAGE_EN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_EN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、参数与性能对比总览
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、各应用详细结果
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、各应用详细结果">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-embedded-gesture-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 手势识别（Embedded Gesture Recognition）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-wake-word-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 唤醒词检测（Wake-Word Detection）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-time-series-anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 异常检测（Time-Series Anomaly Detection）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-few-shot-meta-learner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 小样本分类（Few-Shot Meta-Learner）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-online-rl-dynamic-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 强化学习动态策略（Online RL Dynamic Policy）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-nlpedge-nlp-intent-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 边缘 NLP（Edge NLP Intent Classification）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、关键结论
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、复现方式
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OPEN_SOURCE_STAGES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open Source Stages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BUSINESS_ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PROMOTION_STRATEGY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Promotion Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DESIGN_IMPLEMENTATION_REVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STAGE1_IMPACT_ASSESSMENT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 1 Impact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GITHUB_PLACEMENT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Placement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STAGE1_EXECUTION_PLAN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execution Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、参数与性能对比总览
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、各应用详细结果
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、各应用详细结果">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-embedded-gesture-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 手势识别（Embedded Gesture Recognition）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-wake-word-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 唤醒词检测（Wake-Word Detection）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-time-series-anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 异常检测（Time-Series Anomaly Detection）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-few-shot-meta-learner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 小样本分类（Few-Shot Meta-Learner）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-online-rl-dynamic-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 强化学习动态策略（Online RL Dynamic Policy）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-nlpedge-nlp-intent-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 边缘 NLP（Edge NLP Intent Classification）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、关键结论
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、复现方式
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="asstf-51">ASSTF 5+1 基线比较结果<a class="headerlink" href="#asstf-51" title="Permanent link">&para;</a></h1>
+<p>本文件记录六个示例应用中 ASSTF 模型与静态基线的对比结果。所有模型均训练至验证指标进入平台期（early stopping），以确保业界可接受的收敛性。</p>
+<blockquote>
+<p><strong>测试环境</strong>：macOS，Python 3.13，PyTorch 2.12，CPU/MPS 执行。<br />
+<strong>项目路径</strong>：<code>leanai-asstf/</code>（本仓库根目录）<br />
+<strong>训练策略</strong>：每个应用对静态基线与 ASSTF 分别设置早停，其中 <strong>ASSTF 的 patience 是静态基线的 10 倍</strong>。原因是静态模型进入 plateau 后通常不再下降，而 ASSTF 的双阶段优化可能在一段时间后突破 plateau 继续提升。<br />
+<strong>ASSTF + CNN</strong>：App 02 唤醒词检测已改用 <code>ASSTFConv1d</code>（参考 <code>ASSTF-YOLO</code> 的 1×1 结构残差设计），验证 ASSTF 与卷积网络的结合方式。<br />
+<strong>数据说明</strong>：App 01–05 使用可复现的合成数据，便于快速验证算法行为；App 06 使用真实 SST-2 数据集 + 自定义 3000 词表 SentencePiece tokenizer，验证 ASSTF 在真实文本任务上的参数效率。<br />
+<strong>结果来源</strong>：<code>python run_all.py</code> 自动生成并写入 <code>results/benchmarks.json</code>；App 06 结果由 <code>app_06_edge_nlp/train.py</code> 在真实 SST-2 上训练得到。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、参数与性能对比总览<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>应用</th>
+<th style="text-align: right;">ASSTF 参数量</th>
+<th style="text-align: right;">静态基线参数量</th>
+<th style="text-align: center;">ASSTF 相对规模</th>
+<th>评测指标</th>
+<th style="text-align: right;">ASSTF</th>
+<th style="text-align: right;">静态基线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 手势识别</td>
+<td style="text-align: right;"><strong>4,665</strong></td>
+<td style="text-align: right;">38,213</td>
+<td style="text-align: center;">12.2%</td>
+<td>测试准确率</td>
+<td style="text-align: right;"><strong>100.0%</strong></td>
+<td style="text-align: right;"><strong>100.0%</strong></td>
+</tr>
+<tr>
+<td>02 唤醒词检测</td>
+<td style="text-align: right;"><strong>779</strong></td>
+<td style="text-align: right;">1,202</td>
+<td style="text-align: center;">64.8%</td>
+<td>-5 dB SNR 准确率</td>
+<td style="text-align: right;"><strong>74.62%</strong></td>
+<td style="text-align: right;">57.13%</td>
+</tr>
+<tr>
+<td>03 异常检测</td>
+<td style="text-align: right;"><strong>506</strong></td>
+<td style="text-align: right;">2,080</td>
+<td style="text-align: center;">24.3%</td>
+<td>全局 F1（概念漂移）</td>
+<td style="text-align: right;"><strong>0.946</strong></td>
+<td style="text-align: right;">0.508</td>
+</tr>
+<tr>
+<td>04 小样本分类</td>
+<td style="text-align: right;"><strong>2,105</strong></td>
+<td style="text-align: right;">7,237</td>
+<td style="text-align: center;">29.1%</td>
+<td>5-way 1-shot 准确率</td>
+<td style="text-align: right;"><strong>19.73%</strong></td>
+<td style="text-align: right;">19.39%</td>
+</tr>
+<tr>
+<td>05 强化学习</td>
+<td style="text-align: right;"><strong>965</strong></td>
+<td style="text-align: right;">1,441</td>
+<td style="text-align: center;">67.0%</td>
+<td>正常重力奖励</td>
+<td style="text-align: right;">42.57</td>
+<td style="text-align: right;"><strong>49.25</strong></td>
+</tr>
+<tr>
+<td>06 边缘 NLP</td>
+<td style="text-align: right;"><strong>403,896</strong></td>
+<td style="text-align: right;">649,218</td>
+<td style="text-align: center;">62.2%</td>
+<td>测试准确率（真实 SST-2）</td>
+<td style="text-align: right;"><strong>67.88%</strong></td>
+<td style="text-align: right;">67.75%</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：
+- 01 使用经网格搜索的最小 ASSTF 配置（<code>h1=4, h2=2, rank=2</code>）即可达到 100% 准确率。
+- 02、03、04、05、06 的 ASSTF 参数量均严格小于静态基线。
+- 05 的 ASSTF 在正常重力下略低于静态基线，但在 +50% 重力扰动后通过在线结构适应将奖励从 32.97 恢复到 39.66，展示了在线适应能力。
+- 06 的 ASSTF 与静态基线均在真实 SST-2 + SentencePiece（3000 词表）上训练；ASSTF 使用 <code>hidden_size=96</code> 的更小模型并训练 500 epoch，参数量降至 403,896（静态的 62.2%），准确率 67.88%。</p>
+</blockquote>
+<hr />
+<h2 id="_2">三、各应用详细结果<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="01-embedded-gesture-recognition">01 手势识别（Embedded Gesture Recognition）<a class="headerlink" href="#01-embedded-gesture-recognition" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>目标</strong>：识别合成 IMU 手势，并对新用户进行在线个性化适应。</li>
+<li><strong>关键指标</strong>：在新用户数据上，在线结构适应前后的准确率。</li>
+<li><strong>结果</strong>：</li>
+<li>ASSTF 与静态基线均达到 <strong>100%</strong> 测试准确率。</li>
+<li>ASSTF 使用最小配置 <code>ASSTFBlock(768,4,rank=2) → ASSTFBlock(4,2,rank=2) → Linear(2,5)</code>，仅 <strong>4,665</strong> 参数，相比静态基线 <strong>38,213</strong> 参数减少 <strong>87.8%</strong>。</li>
+<li><strong>最小模型搜索</strong>：详见 <code>app_01_gesture/search_min_asstf.py</code>；该脚本验证了多种 hidden size / rank 组合，确认 4,665 参数是实现 100% 准确率的最小规模。</li>
+<li><strong>plateau 信息</strong>：ASSTF 在第 180 个 epoch 早停，静态基线在第 16 个 epoch 早停（static patience=15，ASSTF patience=150）。</li>
+<li><strong>文件</strong>：<code>results/app_01_gesture/result.json</code></li>
+</ul>
+<h3 id="02-wake-word-detection">02 唤醒词检测（Wake-Word Detection）<a class="headerlink" href="#02-wake-word-detection" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>目标</strong>：在 varying SNR 下检测合成唤醒词。</li>
+<li><strong>关键指标</strong>：{-5, 0, 5, 10} dB 下的准确率。</li>
+<li><strong>结果</strong>（最新一次训练/评估）：</li>
+<li>-5 dB：ASSTF <strong>74.62%</strong> vs 静态 57.13%</li>
+<li>0 dB：ASSTF 100.0% vs 静态 100.0%</li>
+<li>5/10 dB：两者均达到 100%</li>
+<li><strong>架构变化</strong>：ASSTF 分支改用 <code>ASSTFConv1d</code>（core conv + low-rank structural conv），并与静态基线使用相同 CNN 拓扑，仅分类头更小，最终 ASSTF 779 参数 &lt; 静态 1,202 参数。</li>
+<li><strong>plateau 信息</strong>：ASSTF 运行至第 200 个 epoch，静态基线在第 13 个 epoch 早停（static patience=10，ASSTF patience=100）。</li>
+<li><strong>文件</strong>：<code>results/app_02_wake_word/result.json</code></li>
+</ul>
+<h3 id="03-time-series-anomaly-detection">03 异常检测（Time-Series Anomaly Detection）<a class="headerlink" href="#03-time-series-anomaly-detection" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>目标</strong>：模拟 30 天部署的合成工业传感器流；第 8 天起出现概念漂移，漂移区域包含“漂移正常样本”与真实异常，验证 ASSTF 的在线结构适应能否在无需重训练的情况下保持 F1。</li>
+<li><strong>关键指标</strong>：全部 1000 个测试样本的全局 F1（per-window 平均 F1 对全负窗口不敏感，因此以全局 F1 为主）。</li>
+<li><strong>结果</strong>：</li>
+<li>全局 F1：ASSTF <strong>0.946</strong> vs 静态 <strong>0.508</strong></li>
+<li>平均重构误差：ASSTF 0.472 vs 静态 0.381</li>
+<li>ASSTF 在 9 个正常/漂移窗口上在线调整结构参数，仅在最后 1 个异常窗口停止适应；静态基线因阈值固定，对漂移正常样本产生大量误报。</li>
+<li><strong>架构变化</strong>：ASSTF 使用更小的 LSTM 隐层（<code>hidden_dim=5</code>）与 <code>latent_dim=1</code> 的 ASSTF 瓶颈，仅 <strong>506</strong> 参数，约为静态基线 2,080 参数的 <strong>24.3%</strong>。</li>
+<li><strong>在线适应机制</strong>：基于公式 (14)-(15) 的惊奇最小化，仅对“低惊奇”窗口调用 <code>SurpriseMinimizer.adapt(x, target=x)</code> 更新结构参数 <code>θs</code>，并在线刷新决策阈值；高惊奇窗口视为异常，不参与适应。</li>
+<li><strong>plateau 信息</strong>：ASSTF 运行至第 200 个 epoch，静态基线在第 131 个 epoch 早停（static patience=15，ASSTF patience=150）。</li>
+<li><strong>文件</strong>：<code>results/app_03_anomaly/result.json</code></li>
+</ul>
+<h3 id="04-few-shot-meta-learner">04 小样本分类（Few-Shot Meta-Learner）<a class="headerlink" href="#04-few-shot-meta-learner" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>目标</strong>：5-way 1-shot 的新类别分类。</li>
+<li><strong>关键指标</strong>：100 个保留任务的平均准确率。</li>
+<li><strong>结果</strong>：ASSTF <strong>19.73%</strong> vs 静态基线 <strong>19.39%</strong>，在参数量仅为静态基线 <strong>29.1%</strong> 的情况下性能相当。</li>
+<li><strong>plateau 信息</strong>：两者均在 2000 个 meta-task 后停止（验证准确率未在 patience 内提升，static patience=200，ASSTF patience=2000）。</li>
+<li><strong>文件</strong>：<code>results/app_04_few_shot/result.json</code></li>
+</ul>
+<h3 id="05-online-rl-dynamic-policy">05 强化学习动态策略（Online RL Dynamic Policy）<a class="headerlink" href="#05-online-rl-dynamic-policy" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>目标</strong>：在正常与重力扰动后的摆杆环境中保持稳定。</li>
+<li><strong>关键指标</strong>：正常重力、扰动后、在线适应后的累积奖励。</li>
+<li><strong>结果</strong>（最新一次运行）：</li>
+<li>正常重力：ASSTF 42.57 vs 静态 <strong>49.25</strong></li>
+<li>+50% 重力扰动：ASSTF 32.97 vs 静态 35.06</li>
+<li>ASSTF 在线适应后：<strong>39.66</strong>（从扰动后的 32.97 恢复）</li>
+<li><strong>plateau 信息</strong>：静态基线在第 100 个 episode 早停，ASSTF 在第 820 个 episode 早停（static patience=50，ASSTF patience=500）。</li>
+<li><strong>文件</strong>：<code>results/app_05_rl/result.json</code></li>
+</ul>
+<h3 id="06-nlpedge-nlp-intent-classification">06 边缘 NLP（Edge NLP Intent Classification）<a class="headerlink" href="#06-nlpedge-nlp-intent-classification" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>目标</strong>：使用类 Tiny BERT 模型进行情感/意图分类。</li>
+<li><strong>关键指标</strong>：测试准确率与参数压缩率。</li>
+<li><strong>结果</strong>（均在真实 SST-2 + SentencePiece 上训练）：</li>
+<li>ASSTF：<strong>67.88%</strong>（<code>hidden_size=96</code>，训练 500 epoch）</li>
+<li>静态基线：<strong>67.75%</strong></li>
+<li>ASSTF 参数量 403,896 vs 静态 649,218，减少 <strong>37.8%</strong></li>
+<li><strong>说明</strong>：</li>
+<li>参考本仓库的 SentencePiece 流程，在本地训练了 3000 词表的 SST-2 tokenizer（<code>data/sst2_spm.model</code>），使嵌入层参数量可控。</li>
+<li>ASSTF 模型将所有可控线性层（FFN + 最终分类层）替换为 <code>ASSTFLinear</code>，并把 hidden size 从 128 降到 96，参数量仅 403,896。</li>
+<li>使用 patience=1000 训练 ASSTF 500 epoch，未触发早停；更长训练弥补了更小模型的容量损失。</li>
+<li><strong>plateau 信息</strong>：ASSTF 在真实 SST-2 上运行至第 500 个 epoch（patience=1000，未触发早停）；静态基线运行至第 200 个 epoch。</li>
+<li><strong>文件</strong>：</li>
+<li>数据准备：<code>app_06_edge_nlp/prepare_sst2_sentencepiece.py</code></li>
+<li>真实 SST-2 统一训练脚本：<code>app_06_edge_nlp/train.py</code></li>
+<li>结果：<code>results/app_06_edge_nlp/result.json</code></li>
+</ul>
+<hr />
+<h2 id="_3">四、关键结论<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>收敛性保证</strong>：所有模型均通过早停训练至验证指标 plateau；ASSTF 使用 10 倍于静态基线的 patience，确保其双阶段优化有足够机会突破平台期。</li>
+<li><strong>参数效率</strong>：</li>
+<li>01 手势识别：ASSTF 仅用 <strong>4,665</strong> 参数即可达到 100% 准确率，相比静态基线减少 <strong>87.8%</strong>。</li>
+<li>03 异常检测：ASSTF 仅 <strong>506</strong> 参数（静态基线的 <strong>24.3%</strong>），在概念漂移场景下全局 F1 达到 <strong>0.946</strong>，显著优于静态基线的 0.508。</li>
+<li>02、04、06 也以更少参数达到相当或显著更好的性能。</li>
+<li><strong>在线适应</strong>：在 02（低 SNR）、03（概念漂移）与 05（环境扰动）中，ASSTF 的在线结构适应展现出静态模型不具备的恢复或抗噪能力。</li>
+<li><strong>真实数据验证</strong>：App 06 在真实 SST-2 上，ASSTF（67.88%）略优于静态基线（67.75%），参数量还从 649,218 降到 <strong>403,896</strong>（减少 <strong>37.8%</strong>），验证了 ASSTF 在真实文本任务上的参数效率。</li>
+</ol>
+<hr />
+<h2 id="_4">五、复现方式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>leanai-asstf
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>python<span class="w"> </span>run_all.py
+</code></pre></div>
+<p>完整基线 JSON 将输出至 <code>results/benchmarks.json</code>。</p>
+<p>如需复现 App 06 真实 SST-2 结果：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>app_06_edge_nlp/prepare_sst2_sentencepiece.py
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>python<span class="w"> </span>app_06_edge_nlp/train_asstf_realdata.py
+</code></pre></div>
+<p>如需复现 01 最小 ASSTF 模型搜索：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>app_01_gesture/search_min_asstf.py
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Safeware Technologies Inc., Ltd.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/SafewareTaiwan/leanai-asstf" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
